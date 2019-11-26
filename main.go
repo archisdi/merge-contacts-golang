@@ -14,6 +14,12 @@ type Contact struct {
 	otherField StringMap
 }
 
+// MergeContact exported
+func MergeContact(contacts []StringMap) []Contact {
+	mergedContacts := []Contact{}
+	return mergedContacts
+}
+
 func main() {
 	contact := Contact{
 		fullname: "archie isdiningrat",
