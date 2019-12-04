@@ -19,5 +19,9 @@ func main() {
 	var rawContacts []StringMap
 	json.Unmarshal([]byte(byteValue), &rawContacts)
 
-	fmt.Println(rawContacts)
+	contacts := MergeContact(rawContacts)
+
+	for _, contact := range contacts {
+		fmt.Println(contact)
+	}
 }
